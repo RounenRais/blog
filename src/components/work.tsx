@@ -5,7 +5,7 @@ export default function Work() {
   return (
 <div className="flex flex-col  w-100 ">
 <div className="flex flex-col  w-100 px-8 sm:px-6 text-justify md:px-2">
-      <h5 className="font-bold underline ">
+      <h5 className="font-bold underline text-lg">
         Work
       </h5>
     <p>
@@ -13,7 +13,7 @@ export default function Work() {
   </p>      
     </div>
     <div className="flex flex-col gap-2 w-100 px-8  text-justify md:px-2 mt-4 ">
-      <h5 className="font-bold underline ">
+      <h5 className="font-bold underline text-lg ">
         Bio
       </h5>
     <p>
@@ -21,7 +21,7 @@ export default function Work() {
   </p>      
     </div>
     <div className="flex flex-col gap-2 w-100 px-8  text-justify md:px-2 mt-4 ">
-      <h5 className="font-bold underline ">
+      <h5 className="font-bold underline text-lg ">
         I&#9829; 
       </h5>
     <p>

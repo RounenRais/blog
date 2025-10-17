@@ -19,7 +19,7 @@ export default function Navbar() {
         sticky top-0 z-50 w-full
         dark:bg-zinc-900/1 bg-white
          dark:backdrop-blur-3xl
-        border-b border-border
+       
         transition-colors
       "
     >
