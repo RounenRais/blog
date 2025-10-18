@@ -7,6 +7,7 @@ const variants = {
   enter:  { opacity: 1, y: 0 },
   exit:   { opacity: 0, y: 20 },
 };
+
 export default function Layout({ children, title }) {
   return (
     <motion.article

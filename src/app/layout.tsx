@@ -9,16 +9,17 @@ import Footer from "../components/footer";
 const ObjViewer = dynamic(() => import("../components/objViewer"), {
   ssr: false,
 });
-
+ 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
   return (
-    <html lang="tr" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       
-      <body className="min-h-screen bg-background text-foreground flex flex-col items-center antialiased">
+      <body className={` min-h-screen bg-background text-foreground flex flex-col items-center  `}>
         <Fonts />
         <ThemeProvider
           attribute="class"
@@ -27,7 +28,6 @@ export default function RootLayout({
         >
           <Navbar />
           <ObjViewer />
-          <div className="site-bg" aria-hidden />
           <AnimatePresence mode="wait" initial={true}>
             {children}
           </AnimatePresence>

@@ -74,7 +74,6 @@ function ObjModel({
         camera.lookAt(sphere.center);
         camera.updateProjectionMatrix();
       }
-      // ----------------------------------------------------------
 
       if (mounted) setObject(obj);
     })();
@@ -86,7 +85,7 @@ function ObjModel({
 
   // yalnızca yatay (Y) dönüş
   useFrame(() => {
-    if (rotRef.current) rotRef.current.rotation.y += 0.004;
+    if (rotRef.current) rotRef.current.rotation.y += 0.02;
   });
 
   if (!object) return null;

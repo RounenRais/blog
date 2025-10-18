@@ -44,7 +44,7 @@ html.dark {
 /* app/globals.css */
 
 :root {
-  --background: 0 0% 100%;
+  --background: 60 56% 91%;
   --foreground: 222.2 84% 4.9%;
 
   --border: 214.3 31.8% 91.4%;
@@ -57,7 +57,7 @@ html.dark {
 }
 
 .dark {
-  --background: 224 71% 4%;
+    --background: 240 1% 12%;
   --foreground: 213 31% 91%;
   --badge-bg: hsl(220 15% 15%); /* koyu temada açık gri/taş ton */
   --badge-text: hsl(210 40% 98%);
@@ -68,3 +68,16 @@ html.dark {
 }
 
 /* Tailwind reset’lerin ve @tailwind base/components/utilities’nin üst/altında olabilir */
+
+@media (max-width: 768px) {
+  .works {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .works-text{
+   text-align: center;  
+}
+
+}
