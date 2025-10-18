@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-// npm i @emailjs/browser
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -13,7 +12,7 @@ export default function Contact() {
 
   const serviceID = "service_6jdi59o";
   const templateID = "template_e1ju0sd";
-  const publicKey = "bfztpk5UuC5dTuHUA"; // EmailJS public key
+  const publicKey = "bfztpk5UuC5dTuHUA";
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -22,11 +21,11 @@ export default function Contact() {
     setIsSubmitting(true);
     try {
       await emailjs.send(serviceID, templateID, formData, { publicKey });
-      alert("Mesaj başarıyla gönderildi!");
+      alert("Message sent!");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
       console.error("FAILED...", err);
-      alert("Bir hata oluştu, lütfen tekrar deneyin.");
+      alert("Failed to send message. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
@@ -83,7 +82,7 @@ export default function Contact() {
             type="submit"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Gönderiliyor..." : "Send"}
+            {isSubmitting ? "Sending..." : "Send"}
           </button>
         </fieldset>
       </form>
