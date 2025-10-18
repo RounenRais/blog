@@ -79,5 +79,9 @@ html.dark {
   .works-text{
    text-align: center;  
 }
+.w-120{
+      width: calc(var(--spacing) * 100) ;
+
+}
 
 }
