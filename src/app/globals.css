@@ -69,19 +69,53 @@ html.dark {
 
 /* Tailwind reset’lerin ve @tailwind base/components/utilities’nin üst/altında olabilir */
 
+/* ===== Desktop varsayılanları (>=768px) ===== */
+.w-120 {
+  /* önceki "calc(var(--spacing) * 100)" ifadesi tanımsız değişkene bağlıydı.
+     Masaüstünde kontrollü, sabit bir genişlik verelim: */
+  width: 30rem;            /* ~480px */
+  max-width: 100%;         /* taşmayı önle */
+}
+
+/* “justify”lı bloklar için daha iyi okunabilirlik */
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word; /* kelimeler arası boşlukla hizala */
+  hyphens: auto;            /* uygun yerden tireleme (destekleyen browser’larda) */
+  line-height: 1.7;         /* satırlar arası ferahlık */
+  word-break: normal;
+}
+
+/* opsiyonel: works container’ı masaüstünde yatay */
+.works {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* başlık/metin için hafif alt boşluk */
+.works h5 { margin-bottom: 0.25rem; }
+
+/* ===== Mobil düzen (<=768px) ===== */
 @media (max-width: 768px) {
   .works {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;   /* alt alta */
+    align-items: stretch;
   }
-  .works-text{
-   text-align: center;  
-}
-.w-120{
-      width: calc(var(--spacing) * 100) ;
 
-}
+  .works-text {
+    text-align: justify;      /* merkez yerine justify isteniyordu */
+  }
 
+  .w-120 {
+    width: 100%;              /* mobilde tam genişlik */
+    padding-left: 1.25rem;    /* = 20px */
+    padding-right: 1.25rem;
+  }
+
+  /* mobilde satır aralığını biraz daha artır */
+  .text-justify {
+    line-height:1.6;
+  }
 }

@@ -8,7 +8,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 export default function Work() {
   return (
 <div className="flex flex-col  w-120 items-center justify-center mt-6 mb-6 ">
-<div className="flex flex-col  w-120 px-8 sm:px-6 text-justify md:px-2 ">
+<div className="flex flex-col  w-120 px-8 sm:px-6 text-justify md:px-2 area ">
       <h5 className="font-bold underline text-lg">
         Work
       </h5>
@@ -32,7 +32,7 @@ Yunus is a freelance and full-stack developer based in Gebze. He is currently st
         </li>
       </ul>
     </div>
-    <div className="flex flex-col gap-2 w-120 px-8  text-justify md:px-2 mt-4 ">
+    <div className="flex flex-col gap-2 w-120 px-8   md:px-2 mt-4 ">
       <h5 className="font-bold underline text-lg ">
         I&#9829; 
       </h5>
@@ -45,7 +45,7 @@ Yunus is a freelance and full-stack developer based in Gebze. He is currently st
 On the web
 
       </h5>
-      <div className="flex flex-col justify-self-center ">
+      <div className="flex flex-col justify-self-center   ">
             <div className="contactItem flex gap-2 items-center" ><a href="https://github.com/RounenRais" className="hover:bg-blue-300/60 p-3" target="_blank" rel="noopener noreferrer"><GitHubIcon sx={{ fontSize: 15 }} /> <span>@RounenRais</span></a></div>
             <div className="contactItem flex gap-2 items-center" ><a href="https://www.linkedin.com/in/yunus-aksu-0a8176327/" className="hover:bg-blue-300/60 p-3" target="_blank" rel="noopener noreferrer"><LinkedInIcon sx={{ fontSize: 15 }} /> <span>@yunus-aksu</span></a></div>
             <div className="contactItem flex gap-2 items-center" ><a href="https://www.instagram.com/yunus_aksu1/" className="hover:bg-blue-300/60 p-3" target="_blank" rel="noopener noreferrer"><InstagramIcon sx={{ fontSize: 15 }} /> <span>@yunus_aksu1</span></a></div>

@@ -28,10 +28,11 @@ export default function RootLayout({
         >
           <Navbar />
           <ObjViewer />
-          <AnimatePresence mode="wait" initial={true}>
-            {children}
-          </AnimatePresence>
-      
+          <div className="layout-padding flex-grow w-full max-w-3xl flex flex-col items-center justify-center ">
+            <AnimatePresence mode="wait" initial={true}>
+              {children}
+            </AnimatePresence>
+          </div>
         <Footer />
              </ThemeProvider>
       </body>

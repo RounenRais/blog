@@ -22,11 +22,11 @@ export default function Contact() {
     setIsSubmitting(true);
     try {
       await emailjs.send(serviceID, templateID, formData, { publicKey });
-      alert("Mesaj başarıyla gönderildi!");
+      alert("Message sent!");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
       console.error("FAILED...", err);
-      alert("Bir hata oluştu, lütfen tekrar deneyin.");
+      alert("Failed to send message. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
