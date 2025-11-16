@@ -1,5 +1,7 @@
 
 import Layout from "../../../components/article"
+export const runtime = 'edge';
+
 type WorkProps = {
     workId:number|null
     
